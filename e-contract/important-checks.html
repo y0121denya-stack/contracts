@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>重要事項の確認</title>
+<!--
+  会員契約書の最後に付ける「重要事項の確認」ページ（A4・1枚）。
+  元にした内容：入会のしおり（2026.10版）の「重要な会員規約」「その他の大事なポイント」。
+  各項目の左の □ に、MF クラウド契約で相手方の必須チェックボックスを重ねて置く。
+  PDF の作り方：node e-contract/build-pdf.cjs
+-->
+<style>
+  @page { size: A4; margin: 12mm 14mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "IPAGothic", "IPAPGothic", sans-serif; font-size: 8.6pt; line-height: 1.45; color: #000; }
+  h1 { font-size: 15pt; text-align: center; margin: 0 0 1.5mm; letter-spacing: 0.3em; }
+  .lead { text-align: center; margin: 0 0 3mm; font-size: 9pt; }
+  h2 { font-size: 10pt; margin: 3mm 0 1mm; padding: 0.8mm 2mm; background: #e6e6e6; border-left: 2mm solid #333; }
+  .item { display: flex; gap: 3mm; padding: 1.6mm 0; border-bottom: 0.3mm dotted #999; page-break-inside: avoid; }
+  .box { flex: 0 0 auto; width: 6mm; height: 6mm; border: 0.4mm solid #000; margin-top: 0.4mm; }
+  .text { flex: 1 1 auto; }
+  .title { font-weight: bold; font-size: 9pt; }
+  .text p { margin: 0.4mm 0 0; }
+  .closing { margin-top: 4mm; padding: 2.5mm 3mm; border: 0.4mm solid #000; font-size: 9pt; }
+  .meta { margin-top: 1.5mm; font-size: 7.5pt; text-align: right; color: #333; }
+</style>
+</head>
+<body>
+<h1>重要事項の確認</h1>
+<p class="lead">スタッフから説明を受け、内容を確認した項目にチェックを入れてください。</p>
+
+<h2>重要な会員規約</h2>
+
+<div class="item"><div class="box"></div><div class="text">
+  <div class="title">1．第13条（コース変更・休会・退会手続き）</div>
+  <p>会員契約書頭書に記載の「変更受付開始日」以降に、変更手続きの申し出が可能となります。退会は手続きした月の翌月末日での退会、コース変更・休会は手続きした月の翌々月からの適用になります。休会期間は原則2ヵ月間となり、その後は元のコースで自動復帰となりますので、休会期間の延長については予めご相談ください。なお、手続きは店頭にて所定書式のみでの受付とし、電話やLINEなどではお受け出来かねます。</p>
+</div></div>
+
+<div class="item"><div class="box"></div><div class="text">
+  <div class="title">2．第18条（営業日および営業時間）</div>
+  <p>イベント開催などで営業日時が変更する場合はLegame公式アプリで通知しますので、通知設定をお願いします。</p>
+</div></div>
+
+<div class="item"><div class="box"></div><div class="text">
+  <div class="title">3．第23条（盗難および紛失）・第24条（怪我、事故等を回避するための諸注意）</div>
+  <p>パーソナルトレーニングの際に、身体に違和感があれば直ちにトレーナーに申し出てください。万が一、後日に身体の不調を感じても、パーソナルトレーニングの指導が要因である証明が出来ない限り責任を負いかねます。また、会員規約の第23条、第24条を家でも改めてご確認ください。</p>
+</div></div>
+
+<div class="item"><div class="box"></div><div class="text">
+  <div class="title">4．第31条（施設レンタル品の紛失・破損等による賠償）</div>
+  <p>レンタル品において故意・過失で紛失・破損した場合は、相当の弁済が発生します。また、有料ロッカーのカギを紛失・破損した場合は、鍵の再作成費として3,300円（税込）を申し受けます。</p>
+</div></div>
+
+<div class="item"><div class="box"></div><div class="text">
+  <div class="title">5．第32条（予約のキャンセル、遅刻）</div>
+  <p>パーソナルトレーニングの予約は予約日の前営業日の営業終了以降のキャンセルは原則出来ず、その場合は権利を消化したものとします（ただし、二親等以内の方の不幸があった場合を除く）。また、遅刻の場合も連絡なしで5分経過した場合、権利を消化してのキャンセルとなる場合がございます。</p>
+</div></div>
+
+<div class="item"><div class="box"></div><div class="text">
+  <div class="title">6．第33条（ピラティスコースの終了および代替措置について）</div>
+  <p>ピラティスコースは外部講師による提供のため、当該講師の退任その他の理由によりコースの継続が困難となった場合、当施設は当該コースを終了することがあります。その場合、終了日の2ヶ月前までに会員へ通知のうえ、当該コースに在籍する会員は、終了日以降、自動的に当施設が定めるAコースへ移行するものとします。また、当施設が定める所定の契約期間（第13条2項および第34条）中には、当該コースが終了したことを理由に退会することはできないものとします。</p>
+</div></div>
+
+<h2>その他の大事なポイント</h2>
+
+<div class="item"><div class="box"></div><div class="text">
+  <div class="title">7．カフェバースペースへの飲食の持ち込み不可</div>
+  <p>2階のトレーニングスペースでの飲み物は問題ございませんが、食べ物についてはご遠慮ください。</p>
+</div></div>
+
+<div class="item"><div class="box"></div><div class="text">
+  <div class="title">8．パーソナルトレーニングの予約可能回数</div>
+  <p>予約が可能な回数は各コースによって異なり、予約可能回数を上回る予約はできないため、翌月分の予約を取る際に一部制限がかかる場合がございます。毎月16日に翌月1日〜末日までの予約カレンダーが公開されます。</p>
+</div></div>
+
+<div class="item"><div class="box"></div><div class="text">
+  <div class="title">9．月額会費のお支払い</div>
+  <p>月額会費は口座振替もしくはクレジットカード決済で、いずれも前納制となります。口座振替の場合は毎月27日（土日祝の際は翌平日）に翌月分の会費が引落しとなります（ネット銀行をご利用の場合、引き落としの承認要請は集金代行業者の「アプラス」名義で通知されます）。クレジットカード決済の場合は毎月末日に翌月分の会費が決済となります。</p>
+</div></div>
+
+<div class="item"><div class="box"></div><div class="text">
+  <div class="title">10．年会費11,000円（税込）の請求</div>
+  <p>口座振替の場合、初年度分は月額会費の初回口座振替と一緒に振替となります（口座振替依頼書の提出が遅れた場合、遅滞分の月額会費と一緒に現金でお支払いいただきます）。クレジットカード決済の場合、初年度分は入会月の末日に決済となります。次年度以降は入会月の月額会費と一緒に振替および決済となります。</p>
+</div></div>
+
+<div class="item"><div class="box"></div><div class="text">
+  <div class="title">11．体組成計の利用とデータ保存</div>
+  <p>体組成計は無料でご利用でき、データ保存の為のカードは500円で販売しております。</p>
+</div></div>
+
+<div class="closing">私は、上記の各項目についてスタッフから説明を受け、内容を理解したうえで会員契約を締結します。</div>
+<p class="meta">株式会社Follow　絆Style-Gym Legame（入会のしおり 2026.10版より）</p>
+</body>
+</html>
